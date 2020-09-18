@@ -1,6 +1,11 @@
+import "@babel/polyfill";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
 ReactDOM.render(
-    <h1>Привет, мир!</h1>,
-    document.getElementById('hello_world')
+    <App />,
+    document.getElementById('root')
 );
 
 
