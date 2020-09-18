@@ -7,7 +7,6 @@ export default class Body extends React.Component {
 
     constructor(props) {
         super(props);
-        this.sliderRef = React.createRef();
     }
 
     componentDidMount() {
@@ -42,7 +41,7 @@ export default class Body extends React.Component {
     render() {
 
         let columns = BodyStore.getColumns();
-
+        console.log(columns)
         return <div style={{marginTop: '5px', marginBottom: '5px', border: '1px solid black', width: '1000px', height: '1000px'}}>
             {columns.map((column) => {
                 return <div style={{border: '1px solid black', width: '100px', height: '100%'}}>

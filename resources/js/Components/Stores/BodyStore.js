@@ -1,9 +1,9 @@
-import {observable} from 'mobx';
+import {observable, action} from 'mobx';
 
 
 class BodyStore {
 
-    @observable columns = [];
+    @observable columns = [1];
 
     constructor() {
 
